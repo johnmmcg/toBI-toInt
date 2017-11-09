@@ -1,0 +1,87 @@
+// fonts
+$libre: 'Libre Barcode 39 Extended', cursive;
+$start: 'Press Start 2P', cursive;
+$mono: 'Share Tech Mono', monospace;
+
+//colors
+$white: #FFFFFF;
+$lime: #CBE86B;
+$pink: #F2E9E1;
+$black: #1C140D;
+
+html {
+  margin: 0px;
+  padding: 0px;
+  background: radial-gradient($white, $pink);
+}
+
+.converter {
+  text-align: center;
+  margin: 0;
+  margin-top: 5%;
+}
+
+.toBi, .toInt {
+  text-align: center;
+  margin: 5%;
+  float: none;
+  display: inline-block;
+  max-width: 80%;
+
+  h1 {
+    font: {
+      size: 3em;
+      family: $start;
+    }
+    border: solid 5px $lime;
+    padding: 20px;
+    margin: auto;
+  }
+
+  h2 {
+    font: {
+      size: 3em;
+      family: $mono;
+    }
+    text-align: center;
+    margin: 10px;
+  }
+
+  h3 {
+    font: {
+      size: 2.5em;
+      family: $libre;
+    }
+    padding: 0px;
+    margin: 10px auto;
+  }
+
+  p {
+    margin: 0 auto;
+    padding: 0px;
+    font: {
+      size: 1em;
+      family: $mono;
+    }
+  }
+
+  input {
+    height: 1.5em;
+    width: 80%;
+    color: $lime;
+    font: {
+      size: 2.5em;
+      family: $mono;
+    }
+    text-align: center;
+    background: $black;
+    border: solid 2px $lime;
+    transition: .5s;
+
+
+    &:focus {
+      width: 90%;
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+html {
+  margin: 0px;
+  padding: 0px;
+  background: radial-gradient(#FFFFFF, #F2E9E1); }
+
+.converter {
+  text-align: center;
+  margin: 0;
+  margin-top: 5%; }
+
+.toBi, .toInt {
+  text-align: center;
+  margin: 5%;
+  float: none;
+  display: inline-block;
+  max-width: 80%; }
+  .toBi h1, .toInt h1 {
+    font-size: 3em;
+    font-family: "Press Start 2P", cursive;
+    border: solid 5px #CBE86B;
+    padding: 20px;
+    margin: auto; }
+  .toBi h2, .toInt h2 {
+    font-size: 3em;
+    font-family: "Share Tech Mono", monospace;
+    text-align: center;
+    margin: 10px; }
+  .toBi h3, .toInt h3 {
+    font-size: 2.5em;
+    font-family: "Libre Barcode 39 Extended", cursive;
+    padding: 0px;
+    margin: 10px auto; }
+  .toBi p, .toInt p {
+    margin: 0 auto;
+    padding: 0px;
+    font-size: 1em;
+    font-family: "Share Tech Mono", monospace; }
+  .toBi input, .toInt input {
+    height: 1.5em;
+    width: 80%;
+    color: #CBE86B;
+    font-size: 2.5em;
+    font-family: "Share Tech Mono", monospace;
+    text-align: center;
+    background: #1C140D;
+    border: solid 2px #CBE86B;
+    transition: .5s; }
+    .toBi input:focus, .toInt input:focus {
+      width: 90%;
+      outline: none; }

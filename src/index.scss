@@ -15,73 +15,107 @@ html {
   background: radial-gradient($white, $pink);
 }
 
-.converter {
+.container {
   text-align: center;
   margin: 0;
   margin-top: 5%;
-}
 
-.toBi, .toInt {
-  text-align: center;
-  margin: 5%;
-  float: none;
-  display: inline-block;
-  max-width: 80%;
-
-  h1 {
-    font: {
-      size: 3em;
-      family: $start;
-    }
-    border: solid 5px $lime;
-    padding: 20px;
-    margin: auto;
-  }
-
-  h2 {
-    font: {
-      size: 3em;
-      family: $mono;
-    }
+  .converter {
     text-align: center;
-    margin: 10px;
-  }
+    margin: 5% auto;
+    max-width: 50%;
 
-  h3 {
-    font: {
-      size: 2.5em;
-      family: $libre;
+    h1 {
+      font: {
+        size: 7vw;
+        family: $start;
+      }
+      border: solid 5px $lime;
+      padding: 20px;
+      margin: auto;
     }
-    padding: 0px;
-    margin: 10px auto;
+
+    h2 {
+      font: {
+        size: 7vw;
+        family: $mono;
+      }
+      text-align: center;
+      margin: 10px;
+    }
+
+    h3 {
+      font: {
+        size: 7vw;
+        family: $libre;
+      }
+      padding: 0px;
+      margin: 10px auto;
+    }
+
+    p {
+      margin: 0 auto;
+      padding: 0px;
+      font: {
+        size: 3vw;
+        family: $mono;
+      }
+    }
+
+    input {
+      height: 6vw;
+      width: 50%;
+      color: $lime;
+      font: {
+        size: 5vw;
+        family: $mono;
+      }
+      text-align: center;
+      background: $black;
+      border: solid 2px $lime;
+      transition: .5s;
+
+
+      &:focus {
+        width: 70%;
+        outline: none;
+      }
+    }
   }
 
-  p {
+  button {
     margin: 0 auto;
-    padding: 0px;
+    outline: none;
+    width: 15%;
+    padding: 1vw;
     font: {
-      size: 1em;
+      size: 4vw;
       family: $mono;
     }
-  }
+    background: $lime;
+    color: $black;
+    border: {
+      style: solid;
+      width: .5vw;
+      color: $black;
+    };
+    transition: .25s;
 
-  input {
-    height: 1.5em;
-    width: 80%;
-    color: $lime;
-    font: {
-      size: 2.5em;
-      family: $mono;
-    }
-    text-align: center;
-    background: $black;
-    border: solid 2px $lime;
-    transition: .5s;
+    &:hover {
+      background: $black;
+      color: $lime;
+      border: {
+        style: solid;
+        width: .75;
+        color: $lime;
+      };
+      transition: .1s;
 
-
-    &:focus {
-      width: 90%;
-      outline: none;
+      &:active {
+        font-size: 3.75vw;
+        padding: .75vw;
+        width: 13%;
+      }
     }
   }
 }

@@ -21,11 +21,12 @@ html {
   margin-top: 5%;
   padding: 4vw;
   width: 60%;
+  max-width: 900px;
   border: {
     style: solid;
     width: 1vw;
     color: $black;
-  }
+  };
 
   .converter {
     text-align: center;
@@ -46,11 +47,12 @@ html {
 
     h2 {
       font: {
-        size: 7vw;
+        size: 5vw;
         family: $mono;
       }
       text-align: center;
       margin: 10px;
+      overflow: scroll;
     }
 
     h3 {
